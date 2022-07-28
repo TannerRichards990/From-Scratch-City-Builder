@@ -16,15 +16,43 @@ let cityCount = 0;
 let seasonCount = 0;
 let terrainCount =0;
 
-const Slogans = [];
+const slogans = [];
 // set event listeners 
 
 cityDropdown.addEventListener('change', () => {
     const cityType = cityDropdown.value;
     cityCount ++;
+    cityEl.style.backgroundImage = `url(./assets/${cityType}.png)`;
+    console.log(cityDropdown.value);
+    displayStats();
     
 
-})
+});
+
+seasonDropdown.addEventListener('change', () => {
+    const seasonType = seasonDropdown.value;
+    seasonCount ++;
+    seasonEl.style.backgroundImage = `url(./assets/${seasonType}.png)`;
+    displayStats();
+});
+
+terrainDropdown.addEventListener('change', () => {
+    const terrainType = terrainDropdown.value;
+    terrainCount ++;
+    terrainEl.style.backgroundImage = `url(./assets/${terrainType}.png)`;
+    displayStats();
+
+
+});
+
+sloganButton.addEventListener('click', () => {
+    const newSlogan = sloganInput.value;
+    slogans.push(newSlogan);
+    sloganInput.value = '';
+    displaySlogan();
+
+});
+
 
 
 

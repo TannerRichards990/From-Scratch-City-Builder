@@ -33,3 +33,31 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+.images{ 
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+.city-img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.season-img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+.terrain-img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
