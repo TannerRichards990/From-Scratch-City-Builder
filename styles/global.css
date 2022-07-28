@@ -37,7 +37,9 @@ footer {
 .images{ 
     display:flex;
     flex-direction: column;
-    
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 
 }
 
@@ -61,3 +63,6 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%
 }
+
+
+

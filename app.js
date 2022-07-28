@@ -49,12 +49,29 @@ sloganButton.addEventListener('click', () => {
     const newSlogan = sloganInput.value;
     slogans.push(newSlogan);
     sloganInput.value = '';
-    displaySlogan();
+    displaySlogans();
 
 });
 
+function displayStats() {
+    reportEl.textContent = `You have changed the city ${cityCount} times, the season ${seasonCount} times,
+  and the terrain ${terrainCount} times. And nobody can forget your city slogans ever:`;
+
+}
+
+function displaySlogans() {
+    slogansEl.textContent = '';
+    for (let slogan of slogans) {
+        const pTag = document.createElement('p');
+        pTag.classList.add('slogan');
+        pTag.textContent = slogan;
+
+        slogansEl.append(pTag);
 
 
+    }
+
+}
 
 
 
