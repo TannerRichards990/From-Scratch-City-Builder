@@ -12,7 +12,25 @@ const sloganButton = document.getElementById('slogan-button');
 
 // let state
 
+let cityCount = 0;
+let seasonCount = 0;
+let terrainCount =0;
+
+const Slogans = [];
 // set event listeners 
+
+cityDropdown.addEventListener('change', () => {
+    const cityType = cityDropdown.value;
+    cityCount ++;
+    
+
+})
+
+
+
+
+
+
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
