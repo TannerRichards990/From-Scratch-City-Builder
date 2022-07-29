@@ -21,8 +21,25 @@ header {
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: greenyellow;
+    flex-direction: column;
+    align-content:  center;
+
 }
+
+.picker{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
 
 footer {
     position: sticky;
@@ -33,3 +50,37 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+.images{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+
+
+}
+
+.city-img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.season-img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+.terrain-img{
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+
+
