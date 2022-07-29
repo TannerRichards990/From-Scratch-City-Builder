@@ -21,8 +21,25 @@ header {
 }
 
 main {
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: greenyellow;
+    flex-direction: column;
+    align-content:  center;
+
 }
+
+.picker{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
 
 footer {
     position: sticky;
@@ -35,11 +52,12 @@ footer {
 }
 
 .images{ 
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
-    align-items: flex-end;
+    align-content: space-between;
+    align-items: center;
+
 
 }
 
